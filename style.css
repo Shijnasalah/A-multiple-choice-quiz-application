@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f0f4f8;
+    margin:0;
+    padding:20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz_container
+{
+   background-color:white;
+   width: 100%;
+   max-width: 600px;
+   padding: 30px;
+   border-radius: 13px;
+   box-shadow: 0 4px 6px rgba(33, 33, 33, 0.1);
+
+}
+h1{
+    text-align: center;
+    color:#0a1d47;
+
+}
+h2
+{
+    color:#201178;
+    font-size: 21px;
+
+}
+#options
+{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    margin-top: 20px;
+   
+}
+.option-btn
+{
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    background-color: rgb(242, 230, 230);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color:#201178
+  
+
+}
+.option-btn:hover:not(:disabled)
+{
+    background-color: #eff6ff;
+
+}
+.option-btn:disabled
+{
+    cursor: not-allowed;
+}
+.correct
+{
+    background-color: #22c55e !important;
+    color:white;
+     border-color: #16a34a;
+}
+.wrong
+{
+    background-color: #ef4444 !important;
+    color:white;
+     border-color: #dc2626;
+}
+#feedback
+{
+    font-weight: bold;
+    color:#5b0b4c;
+    margin-top: 20px;
+}
+#nextbtn,#restartbtn
+{
+    background-color: #2d305a;
+    color:white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+  
+}
+#nextbtn{
+    display: block;
+    margin: 20px auto;
+}
+
+#nextbtn:disabled
+{
+    background-color: #9ca3af;
+    cursor:not-allowed;
+    
+}
+#nextbtn:hover:not(:disabled),#restartbtn:hover
+{
+    background-color: #1d4ed8;
+
+}
+#result
+{
+    text-align:center;
+}
+
+#finalscore
+{
+    color:hsl(320, 81%, 48%);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#message
+{
+    color:hsl(315, 96%, 39%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive ;
+}
